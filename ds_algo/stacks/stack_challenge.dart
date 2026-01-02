@@ -3,7 +3,7 @@ import 'stack_implementation.dart';
 
 /// Reverse a List
 void reverse(List list){
-  Stacks stack = Stacks(5);
+  FixedListStack stack = FixedListStack(5);
   for(var item in list){
     stack.push(item);
   }
@@ -14,7 +14,7 @@ void reverse(List list){
 
 /// Reverse a String
 void reverseString(String text){
-  Stacks stacker = Stacks(5);
+  FixedListStack stacker = FixedListStack(5);
   for(var i in text.codeUnits){
     stacker.push(i);
   }
@@ -83,7 +83,7 @@ class Test{
 
 /// Checking for balanced parenthesis "()"
 bool check(String text){
-  Stacks stack = Stacks(5);
+  FixedListStack stack = FixedListStack(5);
   int open = "(".codeUnitAt(0);
   int close = ")".codeUnitAt(0);
 
